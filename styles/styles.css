@@ -9,8 +9,18 @@
   font-style: normal; */
 }
 /* Shared Style */
-
-
+body{
+    max-width: 1600px;
+    margin: 0 auto;
+}
+.btn, .btnb{
+    background: linear-gradient(90deg,#F7E93F,#FB09B4,#9100F8);
+    color: white;
+    font-weight: 600;
+    border-radius: 10000px;
+    border: none;
+    padding: 12px 16px;
+}
 
 /* mono styles */
 nav{
@@ -18,8 +28,8 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
-    padding:24px 200px;
+    /* max-width: 1200px; */
+    padding:24px 200px; 
 }
 nav img{
     display: none;
@@ -44,15 +54,69 @@ nav ul li a {
     text-decoration: none;
     color: white;
 }
-.btn {
-    background: linear-gradient(90deg,#F7E93F,#FB09B4,#9100F8);
-    color: white;
-    font-weight: 600;
-    border-radius: 10000px;
-    border: none;
-    padding: 12px 16px;
-}
 
+.banner-container {
+    background: url('../assets/hero-bg.png');
+    padding: 100px 525px;
+    align-items: center;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    /* padding-top: 150px; */
+}
+.banner-container .image{
+    /* padding: 0 100px 40px 100px; */
+    position: relative;
+
+}
+.banner-container .image .button{
+    border: none;
+    color: #1A0B2E;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 8px 16px;
+    background-color: #00FF88;
+    border-radius: 1000px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(120%,-480%);
+    
+}
+.banner-container .img{
+    padding: 0 100px 40px 100px;
+    /* z-index: 1; */
+    /* position: relative; */
+    display: block;
+
+}
+.banner-container .image .microphone{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+}
+.banner-container h1 {
+    font-size: 60px;
+    font-weight: 800;
+    color: #FFFFFF;
+}
+.banner-container p{
+    font-size: 16px;
+    color: #FFFFFF;
+    margin-top: 8px;
+    margin-bottom: 24px;
+}
+.btnb{
+    padding: 12px 20px;
+}
+.btnc{
+    color: #00FF88;
+    border: 1px solid #00FF88;
+    padding: 12px 20px;
+    background-color: #00ff8800;
+    border-radius: 10000px;
+}
 /* Media qurery */
 @media screen and (max-width:576px){
     nav {
@@ -66,5 +130,11 @@ nav ul li a {
     }
     nav img{
         display: inline-block;
+    }
+    body{
+        max-width: 440px;
+    }
+    .banner-container{
+        max-width:unset;
     }
 }
